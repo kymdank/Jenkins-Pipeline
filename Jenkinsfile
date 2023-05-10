@@ -1,4 +1,4 @@
-ipeline{
+Pipeline{
     agent any
     environment {
         DIRECTORY_PATH="/home/kymfalzon/SIT223/jdk-20/Jenkinsfile"
