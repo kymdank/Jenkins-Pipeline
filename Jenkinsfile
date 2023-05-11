@@ -8,9 +8,16 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo "Fetch the source code from $DIRECTORY_PATH"
-                echo "Compile the code and generate any necessary artifacts"
+                echo "Building....."
             }
+            post{
+                success {
+                    mail to: "kymfalzon@gamil.com",
+                    subject: "Build Status Email",
+                    body: "Build was successful",
+                }
+            }
+        
         }
         stage('Test'){
             steps{
