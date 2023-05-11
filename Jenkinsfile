@@ -1,4 +1,4 @@
-Pipeline{
+pipeline{
     agent any
     
     stages{
@@ -18,7 +18,7 @@ Pipeline{
                     subject: "Test Status Email",
                     body: "Unit and integration tests was successful"
                 }
-                Failure{
+                failure{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Test Status Email",
                     body: "Security scan was unsuccessful"
@@ -42,7 +42,7 @@ Pipeline{
                     subject: "Security Scan Status Email",
                     body: "Security scan was successful"
                 }
-                Failure{
+                failure{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Security Scan Status Email",
                     body: "Security scan was unsuccessful"
