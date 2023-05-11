@@ -16,12 +16,14 @@ pipeline{
                 success{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Test Status Email",
-                    body: "Unit and integration tests was successful"
+                    body: "Unit and integration tests was successful",
+                    attachlog: true
                 }
                 failure{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Test Status Email",
-                    body: "Security scan was unsuccessful"
+                    body: "Security scan was unsuccessful",
+                    attachlog: true
                 }
             }
         }
@@ -40,12 +42,14 @@ pipeline{
                 success{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Security Scan Status Email",
-                    body: "Security scan was successful"
+                    body: "Security scan was successful",
+                    attachlog: true
                 }
                 failure{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Security Scan Status Email",
-                    body: "Security scan was unsuccessful"
+                    body: "Security scan was unsuccessful",
+                    attachlog: true
                 }
             }
         }
