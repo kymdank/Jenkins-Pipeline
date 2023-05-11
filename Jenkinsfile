@@ -14,7 +14,7 @@ pipeline{
                 success {
                     mail to: "kymfalzon@gamil.com",
                     subject: "Build Status Email",
-                    body: "Build was successful",
+                    body: "Build was successful"
                 }
             }
         
