@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    
+    jenkins-plugin-cli --plugins emailext-template:1.5
     stages{
         stage('Build'){
             steps{
