@@ -14,12 +14,7 @@ pipeline{
             }
             post{
                 success{
-                    emailext attachLog: true}
-                {
-                    mail to: "kymfalzon@gmail.com",
-                    subject: "Test Status Email",
-                    body: "Unit and integration tests was successful"
-                    
+                    emailext attachLog: true, body: 'Unit and integration tests was successful', subject: 'Test Status Email', to: 'kymfalzon@gmail.com'                    
                 }
                 failure{
                     mail to: "kymfalzon@gmail.com",
