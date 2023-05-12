@@ -16,8 +16,7 @@ pipeline{
                 success{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Test Status Email",
-                    body: "Unit and integration tests was successful",
-                    $BUILD_LOG
+                    body: "Unit and integration tests was successful"
              }
                 failure{
                     mail to: "kymfalzon@gmail.com",
