@@ -22,8 +22,7 @@ pipeline{
                 failure{
                     mail to: "kymfalzon@gmail.com",
                     subject: "Test Status Email",
-                    body: "Unit and integration tests was unsuccessful",
-                    emailext attachLog: true  
+                    body: "Unit and integration tests was unsuccessful"
                         }
             }
         }
