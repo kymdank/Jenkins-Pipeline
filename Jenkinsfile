@@ -14,13 +14,13 @@ pipeline{
             }
             post{
                 success{
-                    to: 'kymfalzon@gmail.com',
+                    mail to: 'kymfalzon@gmail.com',
                     body: 'Unit and integration tests was successful',
                     subject: 'Test Status Email'                    
                     
              }
                 failure{
-                    to: 'kymfalzon@gmail.com', 
+                    mail to: 'kymfalzon@gmail.com', 
                     body: 'Unit and integration tests was unsuccessful',
                     subject: 'Test Status Email'                    
                 }
