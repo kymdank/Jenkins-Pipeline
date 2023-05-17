@@ -17,13 +17,13 @@ pipeline{
                     emailext attachLog: true,
                     body: 'Unit and integration tests was successful',
                     subject: 'Test Status Email', 
-                    to: 'kymfalzon@gmail.com' 
+                    email to: 'kymfalzon@gmail.com' 
              }
                 failure{
                     emailext attachLog: true,
                     body: 'Unit and integration tests was unsuccessful',
                     subject: 'Test Status Email', 
-                    to: 'kymfalzon@gmail.com' 
+                    email to: 'kymfalzon@gmail.com' 
                 }
             }
         }
